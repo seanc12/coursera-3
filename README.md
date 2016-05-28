@@ -34,3 +34,7 @@ mongo
 gem install rspec
 gem install rspec-its
 gem install mongo -v 2.1.2
+
+gem install bson_ext
+
+mongoimport --drop --db test --collection zips zips.json
