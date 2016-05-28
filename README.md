@@ -19,3 +19,18 @@ Version:
 Ruby 2.3.0
 Rails 4.2.6
 
+https://community.c9.io/t/setting-up-mongodb/1717
+
+mkdir data
+echo 'mongod --bind_ip=$IP --dbpath=data --nojournal --rest "$@"' > mongod
+chmod a+x mongod
+
+You can start mongodb by running the mongod script on your project root:
+./mongod
+
+To access a shell prompt for the above MongoDB run the following.
+mongo
+
+gem install rspec
+gem install rspec-its
+gem install mongo -v 2.1.2
